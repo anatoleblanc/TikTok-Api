@@ -96,6 +96,7 @@ class TikTokApi:
             *args,
             **kwargs,
     ):
+        print("ouiaisisisisisis")
         """The TikTokApi class. Used to interact with TikTok. This is a singleton
             class to prevent issues from arising with playwright
 
