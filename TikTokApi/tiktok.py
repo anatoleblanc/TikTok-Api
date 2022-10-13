@@ -473,7 +473,7 @@ class TikTokApi:
                 verifyFp = None
         else:
             verifyFp = kwargs.get("custom_verify_fp")
-
+        print("hola la zone le pull a marché")
         if kwargs.get("force_verify_fp_on_cookie_header", False):
             return {
                 "tt_webid": device_id,
@@ -484,7 +484,7 @@ class TikTokApi:
                     for i in range(16)
                 ),
                 "s_v_web_id": verifyFp,
-                "ttwid": kwargs.get("ttwid"),
+                "ttwid": "7C93d34c6545f2cde216f1d5bee37b0470500ce45fb0af084a5f71a1e9a97995dd",
             }
         else:
             return {
@@ -495,7 +495,7 @@ class TikTokApi:
                     random.choice(string.ascii_uppercase + string.ascii_lowercase)
                     for i in range(16)
                 ),
-                "ttwid": kwargs.get("ttwid"),
+                "ttwid": "7C93d34c6545f2cde216f1d5bee37b0470500ce45fb0af084a5f71a1e9a97995dd",
             }
 
     def get_bytes(self, **kwargs) -> bytes:
