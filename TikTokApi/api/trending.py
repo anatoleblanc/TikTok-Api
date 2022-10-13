@@ -37,8 +37,8 @@ class Trending:
             proxies=Trending.parent._format_proxy(processed.proxy),
             **Trending.parent._requests_extra_kwargs,
         )
-        ttwid = spawn.cookies["ttwid"]
-
+        ttwid = "7C93d34c6545f2cde216f1d5bee37b0470500ce45fb0af084a5f71a1e9a97995dd"
+        
         first = True
         amount_yielded = 0
 
